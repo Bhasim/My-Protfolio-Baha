@@ -8,7 +8,7 @@ Portfolio project about me - with Landing page - Projects gallery - and social m
 
 
 
-**[Test this app yourself](bhasim.github.io/protfolio-baha/)**
+**[Test this app yourself](bhasim.github.io/protfolio-baha)**
 
 
 <img src="./src/images/bhasim-github.gif"  width="999" height="509"/>
