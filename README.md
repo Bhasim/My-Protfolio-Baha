@@ -17,7 +17,7 @@ Portfolio project about me - with Landing page - Projects gallery - and social m
 ##### Developed With
 
 - [x] _HTML5_
-- [x] _CSS3_Display_Grid_Flex box.
+- [ ] _CSS3_Display_Grid_Flex box.
 - [x] _SASS_
 - [x] _SCSS_
 - [x] _Soon JavaScript_
