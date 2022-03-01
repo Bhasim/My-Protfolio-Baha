@@ -12,3 +12,381 @@
 
 //Layout
 @import "./layouts/_layouts-dir";
+
+
+//I was inspired by the background image and some of fonts and color matching from this website https://www.fl-is.com/about.html
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  // html section
+  html {
+    scroll-behavior: smooth;
+    background-image: url(./../images/bg-1.png);
+    font-size: 100%;
+  }
+  // body section
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 20rem;
+    background-color: white;
+  
+    // Navbar section
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(214, 213, 213, 0.411);
+      position: sticky;
+      top: 0;
+      ul {
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        li {
+          padding: 10px 50px;
+          display: table-cell;
+          text-align: center;
+          //   Hover starts here
+          position: relative;
+          &:hover::after {
+            width: 70%;
+            left: 10%;
+          }
+          &::after {
+            content: "";
+            //I discovered this hover nice ideas, try changing the width between (0->1) and transitions ( first-last ) number.
+            width: 0;
+            position: absolute;
+            left: 50%;
+            height: 3px;
+            background: #008aeb;
+            //  The main hover effect
+            transition: cubic-bezier(0.18, 0, 0.18, 1.5) 0.3s;
+          }
+          // Hover ends here
+          a {
+            display: block;
+            color: #737373;
+            text-align: center;
+            text-decoration: none;
+            font-family: "Bad Script", cursive;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+          }
+        }
+      }
+    }
+  
+    //   Home section
+    #home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgb(0, 162, 255);
+      background: url("./../images/bg-5.png") no-repeat center center/cover;
+      height: 100vh;
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        margin: 10rem;
+        top: 5%;
+        right: 10%;
+        h1 {
+          font-family: "Bad Script", cursive;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        button {
+          padding: 10px 20px;
+          background-color: transparent;
+          border: 1px solid rgb(0, 255, 234);
+          color: rgb(52, 140, 255);
+          outline: none;
+          cursor: pointer;
+          transition: 0.3s ease;
+          &:hover {
+            background-color: rgb(0, 162, 255);
+            color: rgb(255, 255, 255);
+            box-shadow: 0 0 20px rgb(0, 162, 255);
+          }
+          &:active {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            box-shadow: 0 0 300x rgb(0, 17, 255);
+          }
+        }
+      }
+    }
+  
+    //   about me section
+    #about {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-bottom: 16%;
+      h1 {
+        color: #8a8a8a;
+      }
+      #pic-intro {
+        display: flex;
+        img {
+          width: 40%;
+          height: 40%;
+          border-radius: 50%;
+          border: 5px #f7d8d84d solid;
+          margin-top: 100px;
+          // some effect to the photo in about me section
+          opacity: 0.8;
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+            box-shadow: 2px 2px #949494;
+          }
+        }
+        #intro {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-items: center;
+          color: #5c5c5c;
+          text-align: left;
+          width: 60%;
+          height: 40%;
+          margin: 15% 4%;
+          h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+          }
+          :nth-child(2) {
+            font-size: 1.2rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+          }
+          :nth-child(3) {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+          }
+          :nth-child(4) {
+            font-size: 1.2rem;
+            margin-bottom: 45px;
+            font-style: italic;
+          }
+          :nth-child(5) {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    #myphotos {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(209, 209, 209, 0.548);
+      padding: 10px;
+      h1 {
+        color: #8a8a8a;
+      }
+      h3 {
+        color: #5c5c5c;
+        font-family: "Bad Script", cursive;
+        font-size: 1.4rem;
+        margin-left: 30rem;
+        margin-top: 2.5rem;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        box-sizing: border-box;
+        margin: 1% 0% 8% 0%;
+  
+        img {
+          width: 340px;
+          height: 220px;
+          margin: 2%;
+          border-radius: 3%;
+          border: 10px solid white;
+          // images scale effect
+          // I searched for a way to make the image in the stretched state (transform:sclae) be in front of the other images, but I did not find a solution for that, so I added the transparency feature ( opacity: 0.8;) to keep the images in the static state, so that they do not appear in front of the image while zooming in ( transorf:scale )
+          cursor: pointer;
+          opacity: 0.8;
+          transition: all 0.6s;
+          transform: scale(1);
+          &:hover {
+            opacity: 1;
+            transform: scaleX(1.6) scaley(1.6);
+          }
+        }
+      }
+    }
+  
+    //   Services section
+    #services {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      h1 {
+        color: #8a8a8a;
+      }
+      // all the boxes in section services
+      .row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        color: #5c5c5c;
+        margin: 7% 0% 7% 0%;
+        //   the text inside the box
+        .box {
+          display: flex;
+          flex-direction: column;
+          width: 350px;
+          height: 450px;
+          border: 2px solid rgb(117, 117, 117);
+          margin: 10px;
+          text-align: justify;
+          padding: 10px;
+          border-radius: 15px;
+          transition: 0.6s;
+          // I gave some effects like mirror reflection with light
+          cursor: pointer;
+          &:hover {
+            transform: skewY(2deg);
+            background-color: #dadada;
+            color: black;
+          }
+          // the header and info text inside the box
+          :nth-child(1) {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 3rem;
+          }
+          :nth-child(2) {
+            font-size: 1.2rem;
+            margin-top: 3rem;
+          }
+        }
+      }
+    }
+  
+    //   Contact Section
+    #contact {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      background-color: rgba(37, 37, 37, 0.9);
+      color: white;
+      padding: 30px;
+      h1 {
+        color: white;
+        margin-left: 42%;
+        font-size: 2rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+        margin: 20px 0px;
+        input {
+          padding: 12px;
+          margin: 15px;
+          width: 50%;
+          border: none;
+          outline: none;
+        }
+        textarea {
+          width: 20%;
+          padding: 10px;
+          width: 50%;
+          margin: 15px;
+          border: none;
+          outline: none;
+        }
+        // submit btn send
+        #send {
+          padding: 10px;
+          width: 10%;
+          margin: 40px;
+          border: none;
+          outline: none;
+          &:hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px white;
+          }
+        }
+      }
+    }
+  
+    // footer section
+    footer {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      background-color: rgba(214, 213, 213, 0.836);
+      padding: 21px;
+      color: #737373;
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        .social-media {
+          text-decoration: none;
+          color: black;
+          display: inline-block;
+        }
+      }
+  
+      .all-rights {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        margin-left: 22rem;
+        .unique {
+          font-family: "Kaushan Script", cursive;
+        }
+      }
+    }
+  }
+  
+  
+  // mobile devices
+  // @media screen and (max-width: 767px) {
+  //     body {
+  //     width: 100vw;
+  //     margin: 1% ;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-content: center;
+  //     justify-items: center;
+  //     font-size: 5px;
+  
+  //     }
+  
+  //     }
+  
+  //     @media screen and (min-width: 768px) and (max-width:1023px){
+  //     body {
+  //     max-width: 100vw;
+  //     margin:3%;
+  //     }
+  //     }
+  
+  //     @media screen and (min-width: 1024px) and (max-width:2250px) {
+  //     body {
+  //     max-width: 100vw;
+  
+  //     }
+  //     }
+  
