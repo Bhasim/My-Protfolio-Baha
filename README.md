@@ -1,7 +1,7 @@
 # My Portfolio
 
 
-### HTML and CSS Project and soon JAVASCRIPT – to Build My Portfolio page layout.
+### HTML and CSS Project and soon JAVASCRIPT – My Portfolio page layout.
 
 Portfolio project about me - with Landing page - Projects gallery - and social media links
 
