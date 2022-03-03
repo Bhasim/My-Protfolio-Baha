@@ -4,11 +4,15 @@
 ### HTML and SCSS Project and soon JAVASCRIPT – My Portfolio page.
 ##### Portfolio project  - with Landing page - Projects gallery - and social media links.
 
+----
+
+##### About Project
+
 A simple Portfolio project that contains some information about me and my passion for programming, Web development, and about the skills I have learned so far in this field. 
 This project also includes some of the photos I took, about my hobby in photography, my passion for it and landscapes.
 
 
-
+-----
 
 **[Test this app yourself](https://bhasim.github.io/protfolio-Baha/)**
 
@@ -47,4 +51,4 @@ LinkedIn: [Bahaaldean Hashim](https://www.linkedin.com/in/bahaaldean-hashim-5984
 
 ---
 
-Made with ❤️ and ☕ by me
+Made with ❤️ and ☕ by me 
