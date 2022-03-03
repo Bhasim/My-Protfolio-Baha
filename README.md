@@ -2,7 +2,7 @@
 
 
 ### HTML and SCSS Project and soon JAVASCRIPT – My Portfolio page.
-#####Portfolio project  - with Landing page - Projects gallery - and social media links.
+##### Portfolio project  - with Landing page - Projects gallery - and social media links.
 
 A simple Portfolio project that contains some information about me and my passion for programming and web development, and about the skills I have learned so far in this field. This project also includes some of the photos I took and about my hobby in photography and my passion for it and landscapes.
 
