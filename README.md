@@ -19,6 +19,7 @@ This project also includes some of the photos I took, about my hobby in photogra
 
 <img src="./src/images/bhasim-github.gif"  width="999" height="509"/>
 
+-----
 
 ##### Developed With
 
