@@ -318,4 +318,95 @@ body footer .all-rights .unique {
   font-family: "Kaushan Script", cursive;
 }
 
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+    margin: 0.2rem;
+  }
+  html body {
+    max-width: 100vw;
+    margin: 0.2rem;
+    font-size: 50%;
+  }
+  html body nav li {
+    padding: 10px 10px;
+    display: table-cell;
+    text-align: center;
+    position: relative;
+  }
+  html body nav li a {
+    display: block;
+    color: #737373;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Bad Script", cursive;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  html footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(214, 213, 213, 0.836);
+    padding: 21px;
+    color: #737373;
+  }
+  html footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+  }
+  html footer .row .social-media {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+  }
+  html footer .all-rights {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin-left: 10rem;
+  }
+  html footer .all-rights .unique {
+    font-family: "Kaushan Script", cursive;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 70%;
+    margin: 1rem;
+  }
+  html body {
+    max-width: 100vw;
+    margin: 1rem;
+    font-size: 70%;
+  }
+  html body nav li {
+    padding: 10px 30px;
+    display: table-cell;
+    text-align: center;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1569px) {
+  html {
+    font-size: 100%;
+    margin: 2rem;
+  }
+  html body {
+    max-width: 100vw;
+    margin: 2rem;
+    font-size: 100%;
+  }
+  html body nav li {
+    padding: 10px 35px;
+    display: table-cell;
+    text-align: center;
+    position: relative;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
