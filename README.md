@@ -35,7 +35,7 @@ This project also includes some of the photos I took, about my hobby in photogra
 
 ### Contact
 
-Mail: <Baha.hasim@dci-student.de><br>
+Mail: <Baha.hasim@dci.student><br>
 GitHub: [Bhasim](https://github.com/)<br>
 LinkedIn: [Bahaaldean Hashim](https://www.linkedin.com/in/bahaaldean-hashim-598463103)
 
