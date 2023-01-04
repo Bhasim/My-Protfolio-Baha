@@ -1,11 +1,11 @@
-# Generate output
-dist/
-# Generate styles
-src/styles/
-# Dependency dir
-node_modules/
-# VS code config
-.vscode/ 
-# my Resume 
-src/cv/
+# # Generate output
+# dist/
+# # Generate styles
+# src/styles/
+# # Dependency dir
+# node_modules/
+# # VS code config
+# .vscode/ 
+# # my Resume 
+# src/cv/
 
