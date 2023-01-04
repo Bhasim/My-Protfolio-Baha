@@ -13,7 +13,7 @@ This project also includes some of the photos I took, about my hobby in photogra
 
 ---
 
-**[Test this app yourself](https://bhasim.github.io/protfolio-Baha/)**
+**[Test this app yourself](Bhasim/my-portfolio-baha)**
 
 <img src="./src/images/bhasim-github.gif"  width="999" height="509"/>
 
